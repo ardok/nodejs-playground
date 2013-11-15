@@ -1,0 +1,16 @@
+{
+  "name": "dust-js-with-node",
+  "description": "A sample webapp using node, express, and dust",
+  "author": "Ardo Kusuma <ardo1201@yahoo.com>",
+  "dependencies": {
+    "consolidate": "0.9.1",
+    "dust": "0.3.0",
+    "ejs": "0.8.4",
+    "express": "3.4.4",
+    "html": "0.0.7",
+    "less": "1.5.0",
+    "path": "0.4.9",
+    "routes": "0.2.0"
+  },
+  "engine": "node >= 0.10.22"
+}
