@@ -15,6 +15,6 @@ How to run this project:
 
     - require.paths.unshift(path.join(__dirname, '..')); // remove this line
     ```
-5) enjoy!
+5.  enjoy!
 
 I followed this: http://sntran.tumblr.com/post/19736046092/using-dust-js-with-express3-0alpha-on-node-js-0-6-x
