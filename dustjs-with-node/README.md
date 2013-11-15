@@ -1,4 +1,4 @@
-dust-js-with-node
+dustjs-with-node
 =================
 
 You will need to have node installed (>= 0.10.22).
