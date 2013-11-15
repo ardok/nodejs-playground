@@ -20,6 +20,9 @@ app.get('/', function(req, res) {
 //  res.sendfile(__dirname + req.params[0]);
 //});
 
+var HTML_EXT = '.html';
+var HTML_EXT_LENGTH = HTML_EXT.length;
+
 app.get('/index.html', function(req, res) {
 //  req.originalUrl;
 //  req._parsedUrl.pathname;
