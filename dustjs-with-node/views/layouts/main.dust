@@ -5,6 +5,8 @@
   <title>{+title}dustjs-with-node{/title}</title>
 
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+  <!--<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>-->
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
 
   <style type="text/css">
   /* <![CDATA[ */
@@ -37,7 +39,7 @@
       </div>
       <div class="modal-body">
         <p>One fine body&hellip;</p>
-        <p>Brought to you by {?name}{name}{:else}Someone{/name}</p>
+        <p>Brought to you by {?name}{name}{:else}Someone{/name} <i class="fa fa-meh-o"></i> </p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

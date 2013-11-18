@@ -18,6 +18,8 @@ How to run this project:
 5.  Next, go into `resources/bootstrap` and run `npm install`
 6.  If you need to recompile the less and js file, just run `grunt dist` from `bootstrap` dir
 7.  Feel free to modify `Gruntfile.js` to your liking. I modified it to output the result into `public` directory
+8.  If you've done all the steps, modified all the things that you wanted to modify, go to root directory i.e. `dustjs-with-node` and run `node server`
+9.  Open up your browser and type in `localhost:3000` or `localhost:3000/index` or `localhost:3000/index.html` (all of them will go to the same page)
 8.  Enjoy!
 
 I followed this: http://sntran.tumblr.com/post/19736046092/using-dust-js-with-express3-0alpha-on-node-js-0-6-x
