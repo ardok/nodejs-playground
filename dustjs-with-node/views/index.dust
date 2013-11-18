@@ -1,5 +1,7 @@
 {>"layouts/main"/}
 
+I wanna see what happens here
+
 {<title}Foo {title}{/title}
 
 {<html_body}

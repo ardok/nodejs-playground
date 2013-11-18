@@ -13,7 +13,7 @@ app.engine('dust', cons.dust);
 app.use('/js', express.static(path.join(__dirname, 'public/js')));
 
 app.get('/', function(req, res) {
-  res.redirect('/index.html');
+  res.redirect('/index');
 });
 
 //app.get(/(.*\.txt)/, function(req, res) {
@@ -24,6 +24,9 @@ var HTML_EXT = '.html';
 var HTML_EXT_LENGTH = HTML_EXT.length;
 
 app.get('/index.html', function(req, res) {
+  res.redirect('/index');
+});
+app.get('/index', function(req, res) {
 //  req.originalUrl;
 //  req._parsedUrl.pathname;
 //  req._parsedUrl.path;
