@@ -1,2 +1,5 @@
-/*/node_modules
+# Don't include any .idea files #
 *.idea
+
+# Don't include local node_modules/ #
+node_modules/

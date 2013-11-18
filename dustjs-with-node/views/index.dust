@@ -1,11 +1,23 @@
 {>"layouts/main"/}
 
-I wanna see what happens here
-
-{<title}Foo {title}{/title}
+{<title}nodejs sample - {title}{/title}
 
 {<html_body}
-    <p>This is my index.dust main body {title}</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-3">
+        <h2>Welcome to dustjs-with-node project!</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        {<sample_text}{/sample_text}
+      </div>
+    </div>
+  </div>
 {/html_body}
 
-{<copy}WHAT{/copy}
+{<copy}{copy} {?cpright_name}{.}{:else}Someone Inc.{/cpright_name}{/copy}
+
+Look! This text is rendered below main layout. You can also add html tags or whatever here.

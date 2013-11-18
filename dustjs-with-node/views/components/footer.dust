@@ -1,0 +1,7 @@
+<div class="container">
+  <p>
+    © {?cpright_year}{.}{:else}2013{/cpright_year} {?cpright_name}{#cpright_name}{.}{/cpright_name}{:else}Company, Inc{/cpright_name} &nbsp; &#183; &nbsp;
+    <a href="#" class="privacy-link">Privacy</a> &#183; &nbsp;
+    <a href="#" class="terms-link">Terms</a>
+  </p>
+</div>

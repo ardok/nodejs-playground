@@ -11,6 +11,9 @@ var app = express();
 app.engine('dust', cons.dust);
 
 app.use('/js', express.static(path.join(__dirname, 'public/js')));
+app.use('/css', express.static(path.join(__dirname, 'public/css')));
+app.use('/fonts', express.static(path.join(__dirname, 'public/fonts')));
+
 
 app.get('/', function(req, res) {
   res.redirect('/index');
@@ -33,7 +36,9 @@ app.get('/index', function(req, res) {
   if (req && req._parsedUrl) {
     res.render(req._parsedUrl.path.slice(1, -HTML_EXT_LENGTH), {
       title: 'Testing out dust.js server-side rendering',
-      copy: 'Ardo Ardo'
+      name: 'Ardo',
+      cpright_name: 'Ardo, Inc.',
+      sample_text: 'This is a sample text passed in from server.js file'
     });
   }
 });
@@ -61,3 +66,4 @@ app.configure(function() {
 //});
 
 http.createServer(app).listen(3000);
+console.log('Listening port 3000');
