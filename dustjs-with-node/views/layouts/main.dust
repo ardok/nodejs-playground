@@ -5,17 +5,26 @@
   <title>{+title}dustjs-with-node{/title}</title>
 
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
-  <!--<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>-->
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
 
   <style type="text/css">
-  /* <![CDATA[ */
-  .margin-top-navbar {
-    /* Give some space for fixed navbar */
-    margin-top: 70px;
-  }
-  /* ]]> */
+    /* <![CDATA[ */
+    .margin-top-navbar {
+      /* Give some space for fixed navbar */
+      margin-top: 70px;
+    }
+
+    #footer {
+      margin-top: 20px;
+      border-top: 1px solid black;
+    }
+    /* ]]> */
   </style>
+
+  {! render extra css style if defined !}
+  {+extra_css_style}
+    {.}
+  {/extra_css_style}
 </head>
 <body>
 
@@ -39,24 +48,44 @@
       </div>
       <div class="modal-body">
         <p>One fine body&hellip;</p>
-        <p>Brought to you by {?name}{name}{:else}Someone{/name} <i class="fa fa-meh-o"></i> </p>
+
+        <p>Brought to you by {?name}{name}{:else}Someone{/name} <i class="fa fa-meh-o"></i></p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
       </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript">
-/* <![CDATA[ */
-$('.privacy-link, .terms-link').click(function() {
-  $('#my-modal').modal('show');
-});
-/* ]]> */
+  /* <![CDATA[ */
+
+  $(document).ready(function () {
+    $('.privacy-link, .terms-link').click(function () {
+      $('#my-modal').modal('show');
+    });
+
+    $(document).keyup(function (e) {
+      if (e.keyCode == 27) {
+        $('#my-modal').modal('hide');
+      }
+    });
+
+    var href = window.location.href;
+    if (href.indexOf('/index') != -1) {
+      $('.navbar .home-li').addClass('active');
+    } else if (href.indexOf('/users') != -1) {
+      $('.navbar .users-li').addClass('active');
+    }
+  });
+  /* ]]> */
 </script>
 </body>
 </html>

@@ -2,6 +2,14 @@
 
 {<title}nodejs sample - {title}{/title}
 
+{<extra_css_style}
+    <style type="text/css">
+      .row {
+        margin-top: 10px;
+      }
+    </style>
+{/extra_css_style}
+
 {<html_body}
   <div class="container">
     <div class="row">
@@ -12,7 +20,15 @@
 
     <div class="row">
       <div class="col-md-12">
-        {<sample_text}{/sample_text}
+        {?sample_text}{sample_text}{/sample_text}
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        Head over to the <a href="https://github.com/ardok/nodejs-playground/tree/master/dustjs-with-node" target="_blank">
+          <i class="fa fa-github-square"></i> GitHub
+        </a> repo for more info!
       </div>
     </div>
   </div>

@@ -1,4 +1,5 @@
-<div>
+{#users}
+<div class="user-card well well-sm">
   <div>
     Username: {username}
   </div>
@@ -6,3 +7,5 @@
     Age: {age}
   </div>
 </div>
+{~n}
+{/users}

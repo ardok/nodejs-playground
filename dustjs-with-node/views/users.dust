@@ -1,0 +1,11 @@
+{>"layouts/main"/}
+
+{<html_body}
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          {>"templates/usercard"/}
+        </div>
+      </div>
+    </div>
+{/html_body}
